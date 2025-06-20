@@ -23,7 +23,7 @@ def draw_trex_boxes(image_path, trex_json, save_path):
         draw.text((bbox[0], bbox[1] - 10), f"{score:.2f}", fill="red")
         
     image.save(save_path)
-    print(f"✅ Visual saved: {save_path}")
+    print(f"Visual saved: {save_path}")
 
 # Loop through JSONs
 for json_file in os.listdir(INPUT_JSON_DIR):
